@@ -1,3 +1,5 @@
 fn main() {
-	let estradiol: String = "test".into();
+    let _estradiol: String = "test".into();
+    // uncomment this to make it error out :trollface:
+    // let _testosterone: String = "test".into();
 }

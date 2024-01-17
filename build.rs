@@ -28,23 +28,25 @@ fn main() {
 			file.read_to_string(&mut contents).unwrap();
 			contents = contents.escape_debug().to_string();
 			if contents.contains("let estradiol") || contents.contains("let _estradiol") || contents.contains("let mut _estradiol") || contents.contains("let mut estradiol") {
-					println!("cargo:warning={}", "it seems you're wanting estrogen... here, have some:");
-					println!("cargo:warning={}", "           ..',;:clllooooooollc:;;,'..            ");
-					println!("cargo:warning={}", "      .';:lodddddddddxxxxxdxxxddddddolc;,..       ");
-					println!("cargo:warning={}", "   ';coddxxxxxxxxxxxxdxxdddxxxxxxxxxxxxxddl:,.    ");
-					println!("cargo:warning={}", " .codxxxxxxxdddddddxdodddddddddddddxddxxxxxxdo:'  ");
-					println!("cargo:warning={}", "'ldxxxxxdddddddddddxdodxdddddddddddddddddxxxxxdo:.");
-					println!("cargo:warning={}", "ldxkxxdddddddddddddxdoddoddddddddddddddddddxxxxdd:");
-					println!("cargo:warning={}", "odxxxxdddddddddddddxdoodddooodddddddddddddddxxxdoc");
-					println!("cargo:warning={}", "lodxxddddddddddddddxdodxdddooddddddddddddddddxxdoc");
-					println!("cargo:warning={}", ",loddddddddddddddddddooddddooddddddddddddddddddoo;");
-					println!("cargo:warning={}", " 'cooooodddddddddddddooooooodddddddddddddddddool;.");
-					println!("cargo:warning={}", "  .':looooooooddddddddddddddddddddddoooooooool:'  ");
-					println!("cargo:warning={}", "     ..,:clllllooooooooooooooooooooooollll:;'.    ");
-					println!("cargo:warning={}", "         ..',;:clllllllllllllllllllc::,'..        ");
-					println!("cargo:warning={}", "              ..',;:ccccllllccc:;,'..             ");
-					println!("cargo:warning={}", "");
-					println!("cargo:warning={}", "good girl");
+			    println!("cargo:warning={}", "it seems you're wanting estrogen... here, have some:");
+			    println!("cargo:warning={}", "           ..',;:clllooooooollc:;;,'..            ");
+			    println!("cargo:warning={}", "      .';:lodddddddddxxxxxdxxxddddddolc;,..       ");
+			    println!("cargo:warning={}", "   ';coddxxxxxxxxxxxxdxxdddxxxxxxxxxxxxxddl:,.    ");
+			    println!("cargo:warning={}", " .codxxxxxxxdddddddxdodddddddddddddxddxxxxxxdo:'  ");
+			    println!("cargo:warning={}", "'ldxxxxxdddddddddddxdodxdddddddddddddddddxxxxxdo:.");
+			    println!("cargo:warning={}", "ldxkxxdddddddddddddxdoddoddddddddddddddddddxxxxdd:");
+			    println!("cargo:warning={}", "odxxxxdddddddddddddxdoodddooodddddddddddddddxxxdoc");
+			    println!("cargo:warning={}", "lodxxddddddddddddddxdodxdddooddddddddddddddddxxdoc");
+			    println!("cargo:warning={}", ",loddddddddddddddddddooddddooddddddddddddddddddoo;");
+			    println!("cargo:warning={}", " 'cooooodddddddddddddooooooodddddddddddddddddool;.");
+			    println!("cargo:warning={}", "  .':looooooooddddddddddddddddddddddoooooooool:'  ");
+			    println!("cargo:warning={}", "     ..,:clllllooooooooooooooooooooooollll:;'.    ");
+			    println!("cargo:warning={}", "         ..',;:clllllllllllllllllllc::,'..        ");
+			    println!("cargo:warning={}", "              ..',;:ccccllllccc:;,'..             ");
+			    println!("cargo:warning={}", "");
+			    println!("cargo:warning={}", "good girl");
+			} else if contents.contains("let testosterone") || contents.contains("let _testosterone") || contents.contains("let mut _testosterone") || contents.contains("let mut testosterone") {
+			    compile_error!("no testosterone for you!");
 			}
 		}		
 	}
